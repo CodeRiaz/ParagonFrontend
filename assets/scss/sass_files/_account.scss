@@ -1,0 +1,177 @@
+.account--wrapper {
+    padding: 30px;
+    background-color: #f9f9f9;
+
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .account__box {
+        padding: 45px 0;
+        background: #fff;
+        margin-bottom: 30px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                width: 50%;
+                list-style: none;
+                @include font-size(14px);
+                line-height: 1.14;
+                letter-spacing: 0.5px;
+                color: #5c585a;
+                padding-left: 30px;
+                background: url(tickmark.svg) left center no-repeat;
+                margin-bottom: 14px;
+            }
+        }
+
+        .h2 {
+            color: #142f3e;
+            margin-bottom: 22px;
+        }
+
+        a {
+            @include font-size(14px);
+            font-weight: 900;
+            line-height: 1.14;
+            letter-spacing: 0.5px;
+            color: #43b072;
+            display: inline-block;
+            margin-top: 14px;
+
+            &.small {
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+
+        h3 {
+            @include font-size(14px);
+            font-weight: 900;
+            line-height: 1.14;
+            letter-spacing: 0.5px;
+            color: #5c585a;
+            margin-bottom: 7px;
+        }
+
+        .address-detail {
+            .shipping-address {
+                width: 48%;
+            }
+
+            p {
+                border-radius: 4px;
+                background: rgba(244, 244, 246, 0.43);
+                padding: 13px 12px;
+                @include font-size(14px);
+                line-height: 1.14;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: #5c585a;
+                margin-bottom: 12px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            label {
+                margin: 14px 0 0 0;
+                display: inline-block;
+                width: 100%;
+
+                span {
+                    display: inline-block;
+                    @include font-size (12px);
+                    line-height: 0.94;
+                    letter-spacing: 0.4px;
+                    color: #43b072;
+                    text-decoration: underline;
+                    background: url(checkbox-uncheck.svg) left center no-repeat;
+                    background-size: 9px;
+                    padding-left: 18px;
+                    cursor: pointer;
+                }
+
+                input[type="checkbox"] {
+                    display: none;
+
+                    &:checked+span {
+                        background: url(checkbox.svg) left center no-repeat;
+                    }
+                }
+            }
+        }
+
+        .orders_wrapper {
+            .order-single {
+                margin-bottom: 15px;
+                position: relative;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:before {
+                    content: "#" counter(list-counter);
+                    counter-increment: list-counter;
+                    position: absolute;
+                    left: -32px;
+                    top: 13px;
+                    font-size: 24px; 
+                    font-size: 14px;
+                    font-weight: 900; 
+                    line-height: 1.14;
+                    letter-spacing: 0.5px;
+                    text-align: center;
+                    color: #43b072;
+                }
+            }
+            .col {
+                width: 48%;
+                counter-reset: list-counter;
+            }
+            .order--detail {
+                padding: 13px;
+                border-radius: 4px;
+                background: rgba(244, 244, 246, 0.43); 
+                h4 {
+                    font-size: 14px;
+                    font-weight: 900;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.14;
+                    letter-spacing: 0.5px;
+                    color: #5c585a;
+                    margin: 0 0 16px 0;
+                    span {
+                        font-size: 10px; 
+                        line-height: 1.6;
+                        letter-spacing: 0.4px;
+                        color: #43b072;
+                        display: inline-block;
+                        margin-left: 20px;
+                        font-weight: 400;
+                    }
+                }
+                ul {
+                    li {
+                        background: none;
+                        padding-left: 23px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

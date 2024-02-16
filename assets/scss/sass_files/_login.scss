@@ -1,0 +1,63 @@
+ .login--wrapper {
+     padding: 110px 0;
+     background-color: #f4f4f6;
+
+     .block--form {
+         margin: 0 auto 24px auto;
+         width: 370px;
+         background-color: #ffffff;
+         padding: 40px;
+         text-align: center;
+
+         .h2 {
+             margin-bottom: 17px;
+         }
+
+         p {
+             margin-bottom: 85px;
+         }
+     }
+
+     .form--links {
+         p {
+             @include font-size(14px);
+             line-height: 1.14;
+             letter-spacing: 0.5px;
+             text-align: center;
+             color: #ababb6;
+             display: block;
+             margin-bottom: 16px;
+         }
+
+         a {
+             @include font-size(14px);
+             line-height: 1.14;
+             letter-spacing: 0.5px;
+             text-align: center;
+             color: #ababb6;
+             text-decoration: underline;
+             display: block;
+             margin-bottom: 16px;
+
+             &:last-of-type {
+                 margin-bottom: 0;
+             }
+         }
+     }
+
+     .show-password {
+         position: absolute;
+         top: 50%;
+         right: 2px;
+         transform: translateY(-50%);
+         z-index: 3;
+
+         a {
+             display: block;
+
+             img {
+                 max-width: 20px;
+             }
+         }
+     }
+ }

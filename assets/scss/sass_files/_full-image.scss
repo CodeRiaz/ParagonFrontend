@@ -1,0 +1,36 @@
+.full-image {
+    padding:104px 0; 
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 611px;
+    @include tablet {
+        text-align: center;
+        padding:75px 0;
+    }
+    .subtext{
+        text-align: left;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .h2{
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    p{
+        color: #fff;
+        text-align: left;
+        max-width: 704px;
+        margin-bottom: 25px;
+        @include tablet {
+            text-align: center;
+        }
+    }
+    &.full-image__science {
+        min-height: 741px;
+        p {
+            max-width: 488px;
+        }
+    }
+}

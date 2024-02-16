@@ -1,0 +1,80 @@
+.testimonials {
+    padding: 83px 0 170px 0;
+    @include tablet {
+        padding: 40px 0 110px 0;
+    }
+    &--top {
+        max-width: 635px;
+        margin: 0 auto;
+        text-align: center;
+
+        .h2 {
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+    }
+
+    &--single {
+        border-radius: 4px;
+        background-color: #f4f4f6;
+        padding: 39px;
+        max-width: 514px;
+        position: relative;
+        margin-right: 52px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:after{
+            position: absolute;
+            bottom: -47px;
+            left: 0;
+            content: "";
+            width: 0; 
+            height: 0; 
+            border-top:47px solid #f4f4f6; 
+            border-right: 60px solid transparent; 
+        }
+        p {
+            text-align: left;
+            margin-bottom: 27px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+
+    &--meta {
+        .avatar {
+            margin: 0 8px 0 0;
+
+            img {
+                max-width: 40px;
+                max-height: 40px;
+                border-radius: 50%;
+            }
+        }
+
+        .author {
+            strong {
+                display: block;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.14;
+                letter-spacing: 0.5px;
+                color: #4e4e56;
+                margin-bottom: 4px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 11px;
+                font-weight: 900;
+                line-height: 1.45;
+                letter-spacing: 0.5px;
+                color: #ababb6;
+            }
+        }
+    }
+}

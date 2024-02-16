@@ -1,0 +1,276 @@
+ .personalized-product {
+     background-color: #f9f9f9;
+     padding: 80px 0;
+     margin: 30px;
+     @include tablet {
+        margin: 30px 13px;
+        padding: 30px 0;
+    }
+     .thumbnail {
+         width: 100%;
+         max-width: 570px;
+        @include tablet {
+            margin-bottom: 30px;
+        }
+         img {
+             max-width: 100%;
+         }
+     }
+
+     .description {
+         text-align: left;
+         max-width: 390px;
+
+         .subtext {
+             margin-bottom: 10px;
+             text-align: left;
+         }
+
+         .h2 {
+             margin-bottom: 10px;
+             text-align: left;
+         }
+
+         p {
+             padding-bottom: 15px;
+             text-align: left;
+         }
+
+         .btn {
+             margin: 15px 0 0 0;
+         }
+     }
+ }
+
+ .product-test {
+     background: url(static-product-bg.jpg) bottom center no-repeat;
+     background-size: cover;
+     padding: 136px 0;
+    @include tablet {
+        padding: 100px 25px;
+    }
+     .copy--wrapper {
+         max-width: 490px;
+     }
+
+     .subtext {
+         margin-bottom: 16px;
+         text-align: left;
+     }
+
+     .h2 {
+         margin-bottom: 16px;
+         text-align: left;
+     }
+
+     p {
+         padding-bottom: 17px;
+         text-align: left;
+     }
+
+     .btn {
+         margin: 15px 0 0 0;
+     }
+ }
+
+ .ready-packs {
+     padding: 90px 0;
+     position: relative; 
+     .section--top {
+         max-width: 735px;
+         margin: 0 auto;
+         text-align: center;
+        @include tablet {
+            padding: 0 25px;
+        }
+         .subtext {
+             margin-bottom: 10px;
+         }
+
+         .h2 {
+             margin-bottom: 20px;
+         }
+
+         p {
+             margin-bottom: 40px;
+         }
+     }
+     &.supplements{ 
+        .pack--single{
+            max-width: 170px;
+            .thumbnail{
+                margin-bottom: 0;
+            }
+            &:nth-child(3n+3) {
+                margin-right: 30px;
+            }
+            &:nth-child(6n+6) {
+                margin-right:0px;
+            }
+        }
+     }
+     .pack--single {
+         max-width: 370px;
+         margin: 15px 30px 15px 0;
+        @include tablet {
+            margin-right: 0;
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+            border-top:1px solid #F4F4F6;
+            border-bottom:1px solid #F4F4F6;
+            width: 100%;
+        }
+         &:nth-child(3n+3) {
+             margin-right: 0;
+         }
+
+         .thumbnail {
+             margin-bottom: 20px;
+             @include tablet {
+                 width: 120px;
+                 margin-bottom: 0;
+             }
+             img {
+                 max-width: 100%;
+             }
+         }
+
+         .meta {
+             @include tablet {
+                 padding: 0 5px;
+                 flex-direction: column;
+             }
+             .title {
+                 a {
+                     @include font-size(16px);
+                     font-weight: bold;
+                     font-style: normal;
+                     font-stretch: normal;
+                     line-height: 1.5;
+                     letter-spacing: 0.5px;
+                     color: #4e4e56;
+                     text-decoration: none;
+                 }
+                 @include tablet {
+                     display: block;
+                 }
+             }
+
+             .price {
+                 @include font-size(16px);
+                 font-weight: bold;
+                 font-style: normal;
+                 font-stretch: normal;
+                 line-height: 1.5;
+                 letter-spacing: 0.5px;
+                 color: #43b072;
+                 @include tablet {
+                    display: block;
+                }
+             }
+         }
+     }
+
+     .slick-arrow {
+         position: absolute;
+         top: 100%;
+         font-size: 12px;
+         font-weight: 900;
+         font-style: normal;
+         font-stretch: normal;
+         line-height: 50px;
+         letter-spacing: 1px;
+         text-align: right;
+         color: #43b072;
+         background: transparent;
+         border: 0;
+         outline: none;
+         text-transform: uppercase;
+         margin-top: 35px;
+         &.slick-disabled {
+             color: #cdcdd2;
+            &.slick-prev{  
+                &:before {
+                    background-image:url(left-arrow-disable.svg) !important;    
+                }
+             }
+            &.slick-next{  
+                &:after {
+                    background-image:url(arrow-right-disable.svg) !important;    
+                }
+             }
+         }
+
+         &.slick-next {
+             right: 0;
+             padding-right: 70px;
+
+             &:after {
+                 content: "";
+                 width: 50px;
+                 height: 50px;
+                 box-shadow: 1px 2px 6px 2px rgba(174, 174, 174, 0.08); 
+                 background-image:url(arrow-right.svg); 
+                 background-color: #ffffff;
+                 border: solid 1px #f4f4f6;
+                 border-radius: 50%;
+                 position: absolute;
+                 top: 0;
+                 right: 0;
+                 text-align: center;
+                 background-size: 14px 44px;
+                 background-repeat: no-repeat;
+                 background-position: center center;
+             }
+         }
+
+         &.slick-prev {
+             left: 0;
+             padding-left: 70px;
+
+             &:before {
+                content: "";
+                width: 50px;
+                height: 50px;
+                box-shadow: 1px 2px 6px 2px rgba(174, 174, 174, 0.08);
+                background-color: #ffffff;
+                background-image:url(left-arrow.svg); 
+                border: solid 1px #f4f4f6;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: center;
+                background-size: 14px 44px;
+                 background-repeat: no-repeat;
+                 background-position: center center;
+            }
+         }
+     }
+ }
+
+ .certifications-logo{
+    padding: 90px 0;
+    text-align: center;
+    .subtext{
+        padding-bottom: 10px;
+    }
+    .h2 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 84px;
+    }
+    .logo-wrapper {
+        @include tablet {
+            max-width: 45%;
+        }
+        img {
+            max-width: 50%;
+            @include tablet {
+                max-width: 100%;
+            }
+        }
+    }
+ }

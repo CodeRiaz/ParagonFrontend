@@ -1,0 +1,14 @@
+.pagetitle--wrapper { 
+    padding: 62px 0;
+    background: #fff;
+    @include tablet {
+        padding: 35px 0;
+    }
+    .h1{
+        color: #142f3e;
+        padding-left: 30px;
+        background: url(icon-page-title.png) left center no-repeat;
+        background-size: 15px;
+    }
+}
+ 

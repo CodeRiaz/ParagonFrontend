@@ -1,0 +1,17 @@
+.find-out { 
+    background-color: #f9f9f9;
+    padding: 84px 0;
+    text-align: center;
+    @include tablet {
+        padding: 60px 0;
+    }
+    &.white-bg{
+        background: #fff;
+    }
+    .h2{
+        margin-bottom: 14px;
+    }
+    p{
+        margin-bottom: 33px; 
+    }
+}

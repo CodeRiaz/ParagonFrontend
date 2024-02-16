@@ -1,0 +1,224 @@
+ .footer {
+     background-color: #142f3e;
+
+     .footer-top {
+         padding: 91px 0;
+         @include tablet {
+             padding: 40px 25px;
+         }
+     }
+
+     &--column {
+         strong {
+             display: block;
+             font-size: 16px;
+             font-weight: bold;
+             line-height: 1;
+             letter-spacing: 0.5px;
+             color: #ffffff;
+             margin-bottom: 18px;
+         }
+
+         p {
+             font-size: 14px;
+             line-height: 1.5;
+             letter-spacing: 0.3px;
+             color: #ffffff;
+             text-align: left;
+             margin-bottom: 18px;
+
+             &:last-of-type {
+                 margin-bottom: 0;
+             }
+         }
+
+         @include placeholder {
+             color: white;
+         }
+
+         .footer--menu {
+             margin: 0;
+             padding: 0;
+
+             li {
+                 display: block;
+
+                 a {
+                     font-size: 14px;
+                     letter-spacing: 0.3px;
+                     color: #ffffff;
+                     text-align: left;
+                     text-decoration: none;
+                     line-height: 2.14;
+                     display: block;
+
+                     &:hover {
+                         text-decoration: underline;
+                     }
+                 }
+             }
+         }
+
+         .social-icons {
+             margin: 20px 0 0 0;
+             padding: 0;
+             font-size: 0;
+
+             li {
+                 display: inline-block;
+                 margin-right: 46px;
+
+                 &:last-child {
+                     margin-right: 0;
+                 }
+
+                 a {
+                     color: #fff;
+                     display: inline-block;
+                 }
+             }
+         }
+     }
+
+     .column {
+         &--legal {
+             max-width: 370px;
+             margin-right: 140px;
+             @include desktop {
+                margin-right: 0;
+            }
+            @include tablet {
+                max-width: 100%;
+                margin-bottom: 50px;
+            }
+         }
+
+         &--menu {
+             max-width: 110px;
+             margin-right: 50px;
+             @include desktop {
+                margin-right: 0;
+            }
+            @include tablet {
+                max-width: 100%;
+                margin-bottom: 50px;
+            }
+         }
+
+         &--stayconnected {
+             margin-left: 70px;
+            @include desktop {
+                margin-left: 0;
+            }
+            @include tablet {
+                width: 100%;
+            }
+             p {
+                 margin-bottom: 22px;
+             }
+
+             label {
+                 opacity: 0.51;
+                 font-size: 10px;
+                 font-weight: bold;
+                 line-height: 1.6;
+                 letter-spacing: 0.4px;
+                 color: #ffffff;
+             }
+
+             fieldset {
+                 border: 0;
+                 margin: 0;
+                 padding: 0;
+                 font-size: 0;
+             }
+
+             input[type="email"] {
+                 font-size: 14px;
+                 font-weight: normal;
+                 font-style: normal;
+                 font-stretch: normal;
+                 line-height: 1.14;
+                 letter-spacing: 0.5px;
+                 color: #ffffff;
+                 padding: 9px 0;
+                 border: 0;
+                 border-bottom: 2px solid #ffffff;
+                 background: transparent;
+                 outline: none;
+                 margin-right: 17px;
+                 min-width: 174px;
+                 @include tablet {
+                     width: 100%;
+                 }
+             }
+
+             .btn--transparent {
+                 background: transparent;
+                 cursor: pointer;
+                 padding: 11px 14px;
+                 width: auto;
+                 @include tablet {
+                     display: block;
+                     margin-top: 20px;
+                     margin-bottom: 30px;
+                 }
+             }
+         }
+     }
+
+     &--copyright {
+         background-color: #142f3e;
+
+         .container {
+             border-top: 1px solid #193a4c;
+             padding: 28px 0;
+             @include tablet {
+                 flex-direction: column-reverse;
+                 padding: 28px 35px;
+                 .bottom-right {
+                     margin-bottom: 10px;
+                 }
+             }
+         }
+
+         p {
+             display: inline-block;
+             font-size: 12px;
+             font-weight: normal;
+             line-height: 1.33;
+             letter-spacing: 0.4px;
+             color: #ffffff;
+             margin-right: 25px;
+
+             &:last-of-type {
+                 margin-right: 0;
+             }
+
+             a {
+                 font-weight: bold;
+                 color: #fff;
+                 text-decoration: none;
+             }
+         }
+
+         a {
+             display: inline-block;
+             font-size: 12px;
+             font-weight: normal;
+             line-height: 1.33;
+             letter-spacing: 0.4px;
+             color: #ffffff;
+             margin-right: 25px;
+             text-decoration: none;
+
+             &:hover {
+                 text-decoration: underline;
+             }
+
+             &:last-of-type {
+                 margin-right: 0;
+             }
+         }
+     }
+ }

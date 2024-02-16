@@ -1,0 +1,155 @@
+.blocks {
+    padding: 0;
+
+    &--container {
+        width: 100%;
+        max-width: 1380px;
+        margin: 0 auto;
+    }
+
+    &--text {
+        padding: 105px;
+        min-height: 675px;
+        background-color: #f9f9f9;
+        width: 48.7%;
+        margin-bottom: 30px;
+        @include desktop {
+            padding: 50px;
+            min-height: auto;
+        }
+        @include tablet {
+            width: 100%;
+            text-align: center;
+            padding: 50px 27px;
+            margin-bottom: 0;
+        }
+        &.auto-height{
+            min-height: 0;
+        }
+        &__white {
+            background: #fff;
+        }
+
+        .subtext {
+            text-align: left;
+            margin-bottom: 11px;
+        }
+
+        .h2 {
+            margin-bottom: 18px;
+            @include tablet {
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+
+        p {
+            text-align: left;
+            margin-bottom: 23px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @include tablet {
+                text-align: center;
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 23px;
+                @include font-size(17px);
+                line-height: 1.59;
+                letter-spacing: 0.3px;
+                color: #4e4e56;
+                display: block;
+                list-style: none;
+                position: relative;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &:before{
+                    content: "";
+                    width: 6.7px;
+                    height: 6.7px; 
+                    border-radius: 50%;
+                    background-color: #43b072;
+                    position: absolute;
+                    top: 10px;
+                    left: -25px;
+                    @include tablet {
+                        display: none; 
+                    }
+                }
+                span {
+                    font-weight: 900;
+                    color: #43b072;
+                }
+            }
+        }
+    }
+
+    &--image {
+        width: 48.7%;
+        font-size: 0;
+        margin-bottom: 30px;
+        @include tablet {
+            width: 100%;
+        }
+        img {
+            max-width: 100%; 
+        }
+
+        &.pull-up {
+            margin-top: -140px;
+            @include desktop {
+                margin-top: 0;
+            } 
+        }
+    }
+    .change-order {
+        @include tablet {
+            order: -1;
+        }
+    }
+}
+
+.block--content {
+    margin: 30px;
+    background-color: #f9f9f9;
+    padding: 122px 0;
+    @include tablet {
+        margin: 30px 13px;
+        padding: 35px 0;
+    }
+    .blocks--text {
+        padding: 0px;
+        max-width: 522px; 
+        margin: 0;
+        @include tablet {
+            max-width: 100%;
+        }
+    }
+
+    .blocks--image {
+        text-align: center;
+        margin-bottom: 0;
+        img {
+            max-width: 377px;
+            @include tablet {
+                width: 377px;
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        &.science-thumbnail {
+            img {
+                @include tablet {
+                    max-width: 120px;
+                }
+            }
+        }
+    }
+}

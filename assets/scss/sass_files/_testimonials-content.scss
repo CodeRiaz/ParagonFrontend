@@ -1,0 +1,90 @@
+ .testimonial-content {
+     background-color: #F9F9F9;
+     padding: 20px;
+     .row {
+         padding: 77px 0;
+         background: #fff;
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+         .container {
+             width: 100%;
+             max-width: 890px;
+         }
+
+         .avatar {
+             width: 9%;
+         }
+
+         .content-wrapper {
+             width: 87%;
+
+             p {
+                 text-align: left;
+                 margin-bottom: 20px;
+             }
+
+             .meta {
+                 padding-left: 33px;
+                 position: relative;
+
+                 &:before {
+                     content: "";
+                     height: 33px;
+                     width: 4px;
+                     border-radius: 3.5px;
+                     background-color: #43B072;
+                     position: absolute;
+                     left: 0;
+                     top: 0;
+                     bottom: 0;
+                     margin: auto;
+                 }
+
+                 strong {
+                     display: block;
+                     color: #4E4E56;
+                     @include font-size(18px);
+                     font-weight: bold;
+                     letter-spacing: 0.56px;
+                     line-height: 1;
+                     font-family: $heading_font;
+                     margin-bottom: 5px;
+                 }
+
+                 span {
+                     display: block;
+                     color: #43B072;
+                     @include font-size(12px);
+                     font-size: 12px;
+                     font-weight: 300;
+                     letter-spacing: 0.38px;
+                     line-height: 1;
+                 }
+             }
+         }
+     }
+     &.textual-content{
+         .row{
+             padding: 64px 0;
+         }
+         .container{
+             width: 100%;
+             max-width: 770px;
+         }
+         .subtext{
+             margin-bottom: 11px;
+             text-align: left;
+         }
+         .h2{
+            margin-bottom: 21px;
+            text-align: left;
+            color: #142F3E;
+         }
+         p{
+            margin-bottom: 0;
+            text-align: left;
+         }
+     }
+ }

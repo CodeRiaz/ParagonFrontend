@@ -1,0 +1,121 @@
+ .block--form {
+     width: 285px; 
+    @include desktop {
+        margin-left: 100px;
+    }
+    @include tablet {
+        margin-left: 0 ;
+        padding: 0 40px;
+    }
+     form {
+         fieldset {
+             position: relative;
+             border: 0;
+             margin: 0 0 41px 0;
+
+             label {
+                 height: 16px;
+                 @include font-size (14px);
+                 font-weight: bold;
+                 line-height: 1.14;
+                 letter-spacing: 0.5px;
+                 color: #5c585a;
+                 @include transition (all, ease, 0.2s);
+                 position: absolute;
+                 left: 0;
+                 top: 2px;
+                 font-family: $heading_font;
+                 font-weight: bold;
+                 z-index: 1;
+
+                 &.active {
+                     @include font-size (10px);
+                     top: -15px;
+                     z-index: 1;
+                 }
+             }
+
+             input,
+             select {
+                 border: 0;
+                 margin: 0;
+                 @include font-size(14px);
+                 line-height: 1.14;
+                 letter-spacing: 0.5px;
+                 color: #142f3e;
+                 padding: 7px 25px 7px 0;
+                 border: 0;
+                 border-bottom: 3px solid #e4e4e5;
+                 width: 100%;
+                 @include transition(border-color, ease, 0.2s);
+                 background: transparent;
+                 position: relative;
+                 z-index: 2;
+
+                 &:focus {
+                     border-color: #43b072;
+                 }
+             }
+
+             select {
+                 -moz-appearance: none;
+                 -webkit-appearance: none;
+                 -ms-appearance: none;
+                 background: url()
+             }
+
+             &.error {
+                 input {
+                     border-color: #e8451f;
+                 }
+
+                 label {
+                     .error-message {
+                         color: #e8451f;
+                         margin-left: 25px;
+                         padding-left: 13px;
+                         position: relative;
+                         display: none;
+
+                         &:before {
+                             content: '';
+                             width: 6px;
+                             height: 6px;
+                             border-radius: 2.8px;
+                             background-color: #e8451f;
+                             border-radius: 50%;
+                             position: absolute;
+                             left: 0;
+                             top: 3px;
+                         }
+                     }
+
+                     &.active {
+                         .error-message {
+                             display: inline-block;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+
+     .checkbox {
+         input[type="checkbox"] {
+             display: none;
+
+             &:checked+span {
+                 background: url(checkbox.svg) left center no-repeat;
+                 background-size: 11px;
+             }
+         }
+
+         label {
+             span {
+                 padding-left: 24px;
+                 background: url(checkbox-uncheck.svg) left center no-repeat;
+
+             }
+         }
+     }
+ }

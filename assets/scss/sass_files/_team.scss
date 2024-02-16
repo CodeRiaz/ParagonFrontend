@@ -1,0 +1,58 @@
+ .team {
+     padding: 85px 0 55px 0;
+
+     .section-top {
+         text-align: center;
+         margin-bottom: 50px;
+        @include tablet {
+            padding: 0 12px;
+        }
+         .subtext {
+             margin-bottom: 10px;
+         }
+     }
+
+     &--single {
+         text-align: center;
+        margin-bottom: 40px;
+        width: 25%;
+        @include tablet {
+            width: 50%;
+        }
+         .thumbnail {
+             text-align: center;
+             margin-bottom: 17px;
+
+             img {
+                 width: 80px;
+                 height: 80px;
+                 display: inline-block;
+             }
+         }
+
+         .name {
+             color: #4E4E56;
+             @include font-size(16px);
+             font-weight: bold;
+             letter-spacing: 0.5px;
+             line-height: 24px;
+             text-align: center;
+             margin-bottom: 8px;
+             display: block;
+         }
+
+         .designation {
+             color: #ABABB6;
+             @include font-size(16px);
+             font-weight: 300;
+             letter-spacing: 0.3px;
+             line-height: 24px;
+             text-align: center;
+         }
+     }
+     &--detail  {
+         @include tablet {
+             justify-content: flex-start;
+         }
+     }
+ }

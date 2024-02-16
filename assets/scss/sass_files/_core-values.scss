@@ -1,0 +1,49 @@
+.core-values {  
+    padding: 94px 0;
+    background: url(static-core-values-bg.jpg) right  center no-repeat;
+    background-size: cover;
+    text-align: left;
+    @include tablet {
+        text-align: center;
+        background: #ffffff;
+        padding: 30px 0;
+    }
+    .content--wrapper {
+        width: 470px;
+        max-width: 100%;
+        @include tablet {
+            width: 100%;
+            text-align: center;
+        }
+        .subtext{
+            padding-bottom: 14px;
+            color: #ababb6;
+        }
+        .subtext, p {
+            text-align: left;
+            padding-bottom: 14px;
+            @include tablet { 
+                text-align: center;
+            }
+        }
+        h2{
+            padding-bottom: 14px;
+        }
+        ul {
+            margin: 0 0 16px 0;
+            padding: 0;
+            li{
+                display: block;
+                font-size: 20px;
+                font-weight: bold; 
+                line-height: 1.8;
+                letter-spacing: normal;
+                color: #43b072;
+                font-family: $heading_font;
+            }
+        }
+        .btn--transparent_green{
+            margin-top: 14px;
+        }
+    }
+}
